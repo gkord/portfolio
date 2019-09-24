@@ -4,14 +4,16 @@
   height: 100vh;
   p {
       font-family: $bodyFont;
+      text-align: left;
   }
 }
 
 .image-container {
     width: 40%;
+    
     img {
-        max-width: 350px;
-        max-height: 350px;
+        max-width: 90%;
+        box-shadow: 10px 10px #746d75;
     }
 }
 

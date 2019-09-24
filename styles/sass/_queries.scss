@@ -34,18 +34,22 @@
   .skills-container svg {
     height: 50px;
     width: 50px;
-}
+  }
 
-.about-container {
+  .about-container {
     flex-direction: column;
-}
-.about-text-container{
+  }
+  .about-text-container {
     width: 80%;
-}
+  }
+
 }
 
 @media (max-width: 514px) {
-    .project-image {
+  .image-container {
+    width: 70%;
+  }
+  .project-image {
     width: 90%;
   }
 
@@ -53,28 +57,28 @@
     width: 90%;
   }
 
-  .contact-left, .contact-right {
-      width: 90%;
+  .contact-left,
+  .contact-right {
+    width: 90%;
   }
 
   .comment-input {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      width: 100%;
-      margin: 8px 0px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    margin: 12px 0px;
   }
-
 }
 
 @media (max-width: 414px) {
-    h1 {
-        font-size: 3.1rem;
-    }
-p {
+  h1 {
+    font-size: 3.1rem;
+  }
+  p {
     font-size: 0.8rem;
-}
-.typed-p {
+  }
+  .typed-p {
     font-size: 1.6rem;
-}
+  }
 }

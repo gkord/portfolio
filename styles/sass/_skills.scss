@@ -12,6 +12,9 @@
         justify-content: space-around;
         li {
             margin: 30px;
+            &:hover{
+                color: $mainGreen;
+            }
         p {
             margin: 0;
         }
@@ -22,4 +25,13 @@
 .skills-container svg {
     height: 100px;
     width: 100px;
+}
+
+svg:hover{
+    fill: gold;
+}
+
+.skills-list {
+    border: 5px solid $mainGreen;
+    border-radius: 2px;
 }
