@@ -233,7 +233,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 100px;
+  padding-top: 100px;
 }
 
 .main-nav {
@@ -509,7 +509,7 @@ header {
 }
 
 .portfolio-section {
-  padding: 20px 0px;
+  padding-top: 20px;
 }
 
 .portfolio-container {
@@ -518,7 +518,6 @@ header {
 
 .portfolio-container p {
   font-family: "Raleway", sans-serif;
-  font-size: 1rem;
   margin: 10px 0px;
 }
 
@@ -892,5 +891,17 @@ footer p {
     text-align: center;
     width: 100%;
     margin: 8px 0px;
+  }
+}
+
+@media (max-width: 414px) {
+  h1 {
+    font-size: 3.1rem;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+  .typed-p {
+    font-size: 1.6rem;
   }
 }

@@ -66,3 +66,15 @@
   }
 
 }
+
+@media (max-width: 414px) {
+    h1 {
+        font-size: 3.1rem;
+    }
+p {
+    font-size: 0.8rem;
+}
+.typed-p {
+    font-size: 1.6rem;
+}
+}
