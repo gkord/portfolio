@@ -1,0 +1,26 @@
+.skills-section {
+    background-image: url('../assets/7800.jpg');
+    max-width: 60%;
+}
+
+.skills-container {
+  text-align: center;
+    ul {
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        li {
+            margin: 30px;
+        p {
+            margin: 0;
+        }
+        }
+    }
+}
+
+.skills-container svg {
+    height: 100px;
+    width: 100px;
+}

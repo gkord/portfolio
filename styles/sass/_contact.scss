@@ -1,0 +1,63 @@
+.contact-section {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.contact-container {
+  display: flex;
+}
+
+.contact-left {
+  width: 40%;
+      a {
+        text-decoration: none;
+        color: black;
+        i {
+            font-size: 1.5rem;
+            margin: 10px
+        }
+    }
+}
+
+.contact-right {
+  width: 60%;
+}
+
+.contact-section fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.comment-input {
+  width: 49%;
+  padding-bottom: 5px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 2px solid black;
+  box-shadow: 0px 2px $mainGreen;
+}
+
+::placeholder {
+  font-family: $bodyFont;
+}
+
+.contact-section textarea {
+  height: 240px;
+  width: 100%;
+  margin: 40px 0px;
+  padding: 10px 0 200px 10px;
+  border-radius: 0;
+  border: 2px solid black;
+  resize: none;
+  box-shadow: 8px 8px $mainGreen;
+}
+
+.comment-submit {
+  font-family: $bodyFont;
+  padding: 10px;
+  background-color: $buttonColor;
+  color: #ffffff;
+  border: none;
+}
