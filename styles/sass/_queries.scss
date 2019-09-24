@@ -39,10 +39,6 @@
     align-items: center;
   }
 
-  .skills-container li {
-    margin: 20px;
-  }
-
   .skills-container p {
     font-size: 0.6rem;
   }
@@ -52,6 +48,13 @@
   }
   .about-text-container {
     width: 80%;
+  }
+}
+
+@media (max-width: 667px) {
+  .skills-container ul li {
+    margin: 30px 40px;
+    width: calc(33% - 80px);
   }
 }
 
@@ -92,8 +95,8 @@
     font-size: 1.6rem;
   }
 
-  .skills-container svg {
-    width: 50px;
-    height: 50px;
+ .skills-container ul li {
+    margin: 30px 45px;
+    width: calc(25% - 90px);
   }
 }
