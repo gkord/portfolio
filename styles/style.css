@@ -217,6 +217,14 @@ p {
   font-family: "Raleway", sans-serif;
 }
 
+a:focus {
+  outline: dotted;
+}
+
+.comment-submit:focus {
+  outline: dotted;
+}
+
 header {
   background: linear-gradient(160deg, #2fb1b6, #2fb1b6 50%, white 50%, white);
   height: 100vh;
@@ -463,6 +471,7 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 100vh;
+  overflow-x: hidden;
 }
 
 .about-section p {
@@ -669,10 +678,22 @@ header {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  width: 100%;
 }
 
 .skills-container ul li {
   margin: 30px;
+  width: calc(25% - 30px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .skills-container ul li:hover {
@@ -681,6 +702,7 @@ header {
 
 .skills-container ul li p {
   margin: 0;
+  text-align: center;
 }
 
 .skills-container svg {
@@ -712,27 +734,27 @@ svg:hover {
   display: flex;
 }
 
-.contact-left {
+.contact-right {
   width: 40%;
 }
 
-.contact-left a {
+.contact-right a {
   text-decoration: none;
   color: black;
 }
 
-.contact-left a i {
+.contact-right a i {
   font-size: 1.8rem;
   margin: 10px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
-.contact-left a i:hover {
+.contact-right a i:hover {
   color: #2fb1b6;
 }
 
-.contact-right {
+.contact-left {
   width: 60%;
 }
 
@@ -851,6 +873,13 @@ footer p {
   outline: 0;
 }
 
+@media (max-width: 1047px) {
+  .skills-container svg {
+    height: 75px;
+    width: 75px;
+  }
+}
+
 @media (max-width: 960px) {
   .project-text {
     width: 45%;
@@ -888,9 +917,11 @@ footer p {
         -ms-flex-align: center;
             align-items: center;
   }
-  .skills-container svg {
-    height: 50px;
-    width: 50px;
+  .skills-container li {
+    margin: 20px;
+  }
+  .skills-container p {
+    font-size: 0.6rem;
   }
   .about-container {
     -webkit-box-orient: vertical;
@@ -940,5 +971,9 @@ footer p {
   }
   .typed-p {
     font-size: 1.6rem;
+  }
+  .skills-container svg {
+    width: 50px;
+    height: 50px;
   }
 }

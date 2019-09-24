@@ -1,7 +1,6 @@
 // $mainFont: 'Josefin Slab', sans-serif;
 $mainFont: 'Bree Serif', sans-serif;
 $bodyFont: 'Raleway', sans-serif;
-$buttonColor: #b58b72;
 $mainGreen: #2fb1b6;
 
 html {
@@ -40,4 +39,12 @@ h3 {
 
 p {
     font-family: $bodyFont;
+}
+
+a:focus {
+    outline: dotted;
+}
+
+.comment-submit:focus {
+    outline:dotted;
 }

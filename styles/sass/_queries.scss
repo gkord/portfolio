@@ -1,3 +1,10 @@
+@media(max-width: 1047px) {
+  .skills-container svg {
+    height: 75px;
+    width: 75px;
+  }
+}
+
 @media (max-width: 960px) {
   .project-text {
     width: 45%;
@@ -31,9 +38,13 @@
     flex-direction: column-reverse;
     align-items: center;
   }
-  .skills-container svg {
-    height: 50px;
-    width: 50px;
+
+  .skills-container li {
+    margin: 20px;
+  }
+
+  .skills-container p {
+    font-size: 0.6rem;
   }
 
   .about-container {
@@ -42,7 +53,6 @@
   .about-text-container {
     width: 80%;
   }
-
 }
 
 @media (max-width: 514px) {
@@ -80,5 +90,10 @@
   }
   .typed-p {
     font-size: 1.6rem;
+  }
+
+  .skills-container svg {
+    width: 50px;
+    height: 50px;
   }
 }
