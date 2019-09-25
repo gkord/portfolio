@@ -44,11 +44,13 @@ a {
   width: 49%;
   padding-bottom: 5px;
   border: 0;
+  border-radius: 0;
+  -webkit-border-radius: 0;
   outline: 0;
   background: transparent;
   border-bottom: 2px solid black;
   box-shadow: 0px 2px $mainGreen;
-    -webkit-appearance: none;
+  -webkit-appearance: none;
 }
 
 ::placeholder {
@@ -64,6 +66,8 @@ a {
   border: 2px solid black;
   resize: none;
   box-shadow: 8px 8px $mainGreen;
+  -webkit-border-radius: 0;
+  -webkit-appearance: none;
 }
 
 .comment-submit {

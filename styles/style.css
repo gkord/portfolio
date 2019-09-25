@@ -383,7 +383,7 @@ header {
 }
 
 .dropdown-menu li {
-  margin: 5px 0px;
+  margin: 20px 0px;
 }
 
 .dropdown-menu li a {
@@ -679,7 +679,6 @@ header {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 100%;
 }
 
 .skills-container ul li {
@@ -780,6 +779,8 @@ svg:hover {
   width: 49%;
   padding-bottom: 5px;
   border: 0;
+  border-radius: 0;
+  -webkit-border-radius: 0;
   outline: 0;
   background: transparent;
   border-bottom: 2px solid black;
@@ -814,6 +815,8 @@ svg:hover {
   resize: none;
   -webkit-box-shadow: 8px 8px #2fb1b6;
           box-shadow: 8px 8px #2fb1b6;
+  -webkit-border-radius: 0;
+  -webkit-appearance: none;
 }
 
 .comment-submit {
@@ -835,6 +838,7 @@ svg:hover {
 footer {
   background: #2FB0B5;
   color: black;
+  padding: 5px 0px;
 }
 
 footer p {
@@ -843,22 +847,16 @@ footer p {
   font-size: 0.7rem;
 }
 
-.footer-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .footer-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .top-button {
@@ -867,11 +865,12 @@ footer p {
   height: 50px;
   background: #FFF;
   position: fixed;
-  right: 40px;
-  bottom: 30px;
+  right: 5%;
+  bottom: 5%;
   z-index: 9999;
   border-radius: 50%;
   opacity: 0.7;
+  -webkit-appearance: none;
   -webkit-transition: opacity ease 0.2s;
   transition: opacity ease 0.2s;
 }
@@ -949,6 +948,10 @@ footer p {
     margin: 30px 40px;
     width: calc(33% - 80px);
   }
+  .skills-container svg {
+    height: 60px;
+    width: 60px;
+  }
 }
 
 @media (max-width: 514px) {
@@ -990,7 +993,11 @@ footer p {
     font-size: 1.6rem;
   }
   .skills-container ul li {
-    margin: 30px 45px;
-    width: calc(25% - 90px);
+    margin: 20px 30px;
+    width: calc(33% - 60px);
+  }
+  .skills-container svg {
+    height: 45px;
+    width: 45px;
   }
 }

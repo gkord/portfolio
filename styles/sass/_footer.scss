@@ -1,6 +1,7 @@
 footer {
     background: #2FB0B5;
     color: black;
+    padding: 5px 0px;
     p {
         margin: 0;
         padding: 10px;
@@ -8,14 +9,10 @@ footer {
     }
 }
 
-.footer-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .footer-text {
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .top-button {
@@ -24,11 +21,12 @@ footer {
     height: 50px;
     background: #FFF;
     position: fixed;
-    right: 40px;
-    bottom: 30px;
+    right: 5%;
+    bottom: 5%;
     z-index: 9999;
     border-radius: 50%;
     opacity: 0.7;
+    -webkit-appearance: none;
     -webkit-transition: opacity ease 0.2s;
     transition: opacity ease 0.2s;
 }

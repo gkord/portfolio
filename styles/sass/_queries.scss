@@ -56,6 +56,11 @@
     margin: 30px 40px;
     width: calc(33% - 80px);
   }
+
+  .skills-container svg {
+    height: 60px;
+    width: 60px;
+  }
 }
 
 @media (max-width: 514px) {
@@ -96,7 +101,12 @@
   }
 
  .skills-container ul li {
-    margin: 30px 45px;
-    width: calc(25% - 90px);
+    margin: 20px 30px;
+    width: calc(33% - 60px);
+  }
+
+  .skills-container svg {
+    height: 45px;
+    width: 45px;
   }
 }
