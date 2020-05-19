@@ -1,17 +1,15 @@
 footer {
-    background: #2FB0B5;
     color: black;
-    padding: 5px 0px;
+    padding: 10px 0px;
     p {
         margin: 0;
-        padding: 10px;
-        font-size: 0.7rem;
+        font-size: 1.4rem;
     }
 }
 
 .footer-text {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 
@@ -39,4 +37,8 @@ footer {
 
 .top-button:focus {
 	outline:0;
+}
+
+.top-button i {
+    display: block;
 }

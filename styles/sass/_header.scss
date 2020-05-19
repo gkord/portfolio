@@ -1,25 +1,31 @@
 header {
-  background: linear-gradient(
-    160deg,
-    $mainGreen,
-    $mainGreen 50%,
-    white 50%,
-    white
-  );
-  height: 100vh;
+  background-image: url(../assets/hero-image.jpg);
+  background-position: center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
 }
 
 .header-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   padding-top: 100px;
+  height: 50%;
+}
+
+.header-main-text {
+  text-align: center;
+  margin-bottom: 150px;
 }
 
 .main-nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  padding-top: 10px;
   ul {
     display: flex;
     justify-content: space-between;
@@ -29,10 +35,14 @@ header {
     a {
       text-decoration: none;
       font-family: $bodyFont;
-      color: black;
+      font-size: 2rem;
+      color: rgb(2, 58, 75);
+      text-shadow: 0 0 75px rgb(66, 55, 221);
       transition: all 0.3s ease;
+      padding: 10px;
+      border-bottom: 2px solid transparent;
       &:hover {
-        border-bottom: 2px solid gold;
+        border-bottom: 2px solid #27808d;
       }
     }
   }
@@ -40,6 +50,31 @@ header {
 
 .dropdown-nav {
   display: none;
+}
+
+.dropdown-menu {
+  position: absolute;
+  z-index: 9999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0;
+  list-style: none;
+  li {
+    margin: 40px 0px;
+    a {
+      text-decoration: none;
+      font-family: $bodyFont;
+      font-size: 4rem;
+      color: white;
+      transition: all 0.3s ease;
+      padding: 10px 10px 10px 0;
+      border-bottom: 2px solid transparent;
+      &:hover {
+        border-bottom: 2px solid gold;
+      }
+    }
+  }
 }
 
 .toggle-button {
@@ -102,7 +137,7 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.95);
   z-index: 90;
 }
 
@@ -110,77 +145,52 @@ header {
   display: none;
 }
 
-.dropdown-menu {
-  position: absolute;
-  z-index: 9999;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 0;
-  list-style: none;
-  li {
-    margin: 20px 0px;
-    a {
-      text-decoration: none;
-      font-family: $mainFont;
-      font-size: 2rem;
-      color: white;
-      transition: all 0.3s ease;
-      &:hover {
-        border-bottom:2px solid gold;
-      }
-    }
-  }
-}
-
-.name-container {
-  a {
-    text-decoration: none;
-    color: black;
-    font-family: $mainFont;
-    font-style: italic;
-    font-size: 2rem;
-  }
-}
-
 .typed-p {
-  font-size: 2rem;
+  font-size: 3.6rem;
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 40px rgb(2, 58, 75);
 }
 
-.middle {
-  position: absolute;
-  top: 90%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.fa-chevron-down {
+  font-size: 5rem;
+  color: white;
 }
 
-.mouse {
-  width: 50px;
-  height: 90px;
-  border: 4px solid black;
-  border-radius: 60px;
-  &::before {
-    content: "";
-    width: 10px;
-    height: 10px;
-    position: absolute;
-    top: 30px;
-    left: 50%;
-    background: black;
-    transform: translateX(-50%);
-    border-radius: 50%;
-    opacity: 1;
-    animation: mouse 2.2s infinite cubic-bezier(0.65, 0.05, 0.36, 1);
-  }
+.middle a {
+  outline-color: black;
 }
 
-@keyframes mouse {
-  from {
-    opacity: 1;
-    top: 15px;
-  }
-  to {
-    opacity: 0;
-    top: 70px;
-  }
-}
+// .mouse {
+//   width: 40px;
+//   height: 70px;
+//   border: 4px solid white;
+//   border-radius: 25px;
+//   text-shadow: 0 0 40px rgb(2, 58, 75);
+//   position: relative;
+//   &::before {
+//     content: '';
+//     width: 8px;
+//     height: 8px;
+//     position: absolute;
+//     top: 20px;
+//     left: 50%;
+//     background: white;
+//     text-shadow: 0 0 40px rgb(2, 58, 75);
+//     transform: translateX(-50%);
+//     border-radius: 50%;
+//     opacity: 1;
+//     animation: mouse 2.2s infinite cubic-bezier(0.65, 0.05, 0.36, 1);
+//   }
+// }
+
+// @keyframes mouse {
+//   from {
+//     opacity: 1;
+//     top: 10px;
+//   }
+//   to {
+//     opacity: 0;
+//     top: 50px;
+//   }
+// }

@@ -1,5 +1,6 @@
 .portfolio-section {
   padding-top: 20px;
+  background: rgba(238, 238, 238, 0.3);
 }
 
 .portfolio-container {
@@ -15,13 +16,13 @@
 }
 .portfolio-container h3 {
   margin: 10px 0px;
-  font-size: 1.3rem;
+  font-size: 2.6rem;
   font-weight: 700;
   position: relative;
   &::after {
-      background: none repeat scroll 0 0 rgba(47, 177, 182, 0.7);
+    background: none repeat scroll 0 0 rgba(47, 177, 182, 0.7);
     bottom: -10px;
-    content: "";
+    content: '';
     display: block;
     height: 15px;
     position: absolute;
@@ -38,12 +39,13 @@
   margin: 50px 0px;
 }
 
-.project-2, .project-4 {
+.project-2,
+.project-4 {
   flex-direction: row-reverse;
 }
 
 .project-image {
-  width: 50%;
+  flex: 1;
   position: relative;
   img {
     width: 100%;
@@ -52,11 +54,11 @@
 
 .project-text {
   display: flex;
+  flex: 1;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 50%;
   padding: 20px;
   ul {
     padding: 0;
@@ -69,7 +71,7 @@
       list-style: none;
       padding: 5px;
       margin: 5px;
-      font-size: 0.7rem;
+      font-size: 1.4rem;
       font-family: $bodyFont;
       border: 1px solid black;
     }
@@ -78,27 +80,19 @@
 
 .portfolio-button-container {
   display: flex;
-  a {
-    text-decoration: none;
-    padding: 5px;
-    // color: #ffffff;
-    color: black;
-    transition: color 0.3s ease;
-    &:hover {
-      color: black;
-    }
-  }
 }
 
 .portfolio-link-button {
   background: $mainGreen;
+  text-decoration: none;
+  color: black;
   border: none;
   padding: 10px;
   margin: 10px;
   font-family: $bodyFont;
   transition: all 0.3s ease;
+  font-size: 2rem;
   &:hover {
-  box-shadow: inset 0 0 0 2em gold;
-  color: black;
+    box-shadow: inset 0 0 0 2em gold;
   }
 }
